@@ -172,4 +172,22 @@ export default function CreateCampaignPage({ onNavigate }: CreateCampaignPagePro
         }
         
         .animation-delay-2000 {
-          animation-delay:
+          animation-delay: 2s;
+        }
+        
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+
+        .animate-in {
+          opacity: 1 !important;
+          transform: translateY(0) scale(1) !important;
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
+    </div>
+  );
+}
