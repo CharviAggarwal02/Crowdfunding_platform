@@ -89,7 +89,7 @@ export default function InvestorDashboard({
         // ⭐ FETCH INVESTMENTS
         if (user?.id) {
           const res = await fetch(
-            `http://127.0.0.1:8000/api/investments/${user.id}`
+            `https://crowdfunding-platform-3.onrender.com/api/investments/${user.id}`
           );
 
           const data = await res.json();

@@ -84,7 +84,7 @@ export default function StartupDetailsPage({
       return;
     }
 
-    const res = await fetch("http://127.0.0.1:8000/api/invest", {
+    const res = await fetch("https://crowdfunding-platform-3.onrender.com/api/invest", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

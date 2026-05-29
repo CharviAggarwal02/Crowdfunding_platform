@@ -120,7 +120,7 @@ export default function EntrepreneurDashboard({
       const token = getToken()
       console.log("[DASHBOARD] Token found:", token ? "yes" : "no")
 
-      const res = await fetch("http://127.0.0.1:8000/api/startups/my", {
+      const res = await fetch("https://crowdfunding-platform-3.onrender.com/api/startups/my", {
         headers: { Authorization: `Bearer ${token}` }
       })
 

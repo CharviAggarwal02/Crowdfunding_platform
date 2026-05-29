@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://127.0.0.1:8000/api/analytics";
+const API = "https://crowdfunding-platform-3.onrender.com/api/analytics";
 
 // Summary (alias for both names)
 export const getSummary = async () => {

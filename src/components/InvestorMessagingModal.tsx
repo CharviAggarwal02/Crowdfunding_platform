@@ -62,7 +62,7 @@ export default function InvestorMessagingModal({
     // Fetch existing messages from REST API
     const loadMessages = async () => {
       try {
-        const res = await fetch(`http://127.0.0.1:8000/api/messages/${startup_id}`);
+        const res = await fetch(`https://crowdfunding-platform-3.onrender.com/api/messages/${startup_id}`);
         const data = await res.json();
         setMessages((prev) => ({
           ...prev,
@@ -137,7 +137,7 @@ export default function InvestorMessagingModal({
 
     // ✅ Also persist to your REST API
     try {
-      await fetch("http://127.0.0.1:8000/api/messages", {
+      await fetch("https://crowdfunding-platform-3.onrender.com/api/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

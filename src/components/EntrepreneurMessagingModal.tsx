@@ -48,7 +48,7 @@ export default function EntrepreneurMessagingModal({
     const fetchInvestors = async () => {
       try {
         console.log(`[ENTREPRENEUR] Fetching investors for startup: ${startupId}`);
-        const res = await fetch(`http://127.0.0.1:8000/api/investors/${startupId}`);
+        const res = await fetch(`https://crowdfunding-platform-3.onrender.com/api/investors/${startupId}`);
         const data = await res.json();
         console.log("[ENTREPRENEUR] Investors fetched:", data);
         setInvestorsList(data);
@@ -123,7 +123,7 @@ export default function EntrepreneurMessagingModal({
     const loadMessages = async () => {
       try {
         console.log(`[ENTREPRENEUR] Loading messages for startup ${startupId}`);
-        const res = await fetch(`http://127.0.0.1:8000/api/messages/${startupId}`);
+        const res = await fetch(`https://crowdfunding-platform-3.onrender.com/api/messages/${startupId}`);
         const data = await res.json();
         
         setMessages((prev) => ({
@@ -168,7 +168,7 @@ export default function EntrepreneurMessagingModal({
       startup_id: startupId
     });
 
-    fetch("http://127.0.0.1:8000/api/messages", {
+    fetch("https://crowdfunding-platform-3.onrender.com/api/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://127.0.0.1:8000/api/startups";
+const API = "https://crowdfunding-platform-3.onrender.com/api/startups";
 
 export const getStartups = async () => {
   const res = await axios.get(API);

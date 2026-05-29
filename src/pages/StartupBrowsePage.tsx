@@ -139,7 +139,7 @@ const handlePublishSubmit = async (e: React.FormEvent) => {
     };
 
     const response = await fetch(
-      "http://127.0.0.1:8000/api/startups/",
+      "https://crowdfunding-platform-3.onrender.com/api/startups/",
       {
         method: "POST",
         headers: {
