@@ -36,7 +36,7 @@ fastapi_app.add_middleware(
 fastapi_app.include_router(auth.router)
 fastapi_app.include_router(investment.router)
 fastapi_app.include_router(analytics.router)
-fastapi_app.include_router(prediction.router)
+# fastapi_app.include_router(prediction.router)
 fastapi_app.include_router(startups.router)
 fastapi_app.include_router(campaign.router)
 fastapi_app.include_router(admin.router)
